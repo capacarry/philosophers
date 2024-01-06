@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   initiate_data.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marianamestre <marianamestre@student.42    +#+  +:+       +#+        */
+/*   By: gcapa-pe <gcapa-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 13:36:24 by capa              #+#    #+#             */
-/*   Updated: 2024/01/05 16:38:14 by marianamest      ###   ########.fr       */
+/*   Updated: 2024/01/06 17:29:48 by gcapa-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ int	data_init(t_global_data *data, char *av[], int ac)
 	data->time_to_die = ft_atoi(av[2]);
 	data->time_to_eat = ft_atoi(av[3]);
 	data->time_to_sleep = ft_atoi(av[4]);
+	data->limit_of_meals = '0';
 	data->t_start_of_program = get_time();
 	if (data->all_philosophers == NULL)
 		return (2);

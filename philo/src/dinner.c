@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   dinner.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marianamestre <marianamestre@student.42    +#+  +:+       +#+        */
+/*   By: gcapa-pe <gcapa-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 15:23:18 by capa              #+#    #+#             */
-/*   Updated: 2024/01/05 16:38:41 by marianamest      ###   ########.fr       */
+/*   Updated: 2024/01/06 17:37:55 by gcapa-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ void	*dinner_start(void *philo)
 	t_philo	*thinker;
 
 	thinker = (t_philo *)philo;
-	if (thinker->phil_id % 2 == 0)
+	if (thinker->phil_id % 2 == 0 
+		&& thinker->data->limit_of_meals != thinker->meals_consumed)
 	{
 		write_status(THINKING, thinker);
 		ft_usleep(10, thinker);

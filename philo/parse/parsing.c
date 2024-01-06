@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: capa <capa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: gcapa-pe <gcapa-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 13:38:11 by capa              #+#    #+#             */
-/*   Updated: 2024/01/05 17:29:36 by capa             ###   ########.fr       */
+/*   Updated: 2024/01/06 17:38:41 by gcapa-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,6 @@ int	check_args(char *args[], int nb_args)
 	while (--nb_args > 0)
 	{
 		if (args[1][0] == '0')
-			return (0);
-		if (args[5][0] == '0' || args[5][0] == '-')
 			return (0);
 		if (args[2][0] == '0')
 		{
